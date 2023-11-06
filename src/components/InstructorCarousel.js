@@ -49,8 +49,8 @@ function InstructorCarousel() {
                     <div className="image">
                                 <img src="/images/U.png" alt="" /> 
                             </div>
-                        <h3>*&^%##$$$****</h3>
-                        <p>**%$#$@#%%^$</p>
+                        <h3>Udara Wijesinghe</h3>
+                        <p>Leader</p>
                         <div className="share">
                             <i className="fab fa-facebook-f"></i>
                             <i className="fab fa-twitter"></i>
