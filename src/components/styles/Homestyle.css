@@ -511,6 +511,10 @@ section{
 
 /* activities */
 
+.btn btn-info{
+  text-decoration: none;
+}
+
 .activities .box-container{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));

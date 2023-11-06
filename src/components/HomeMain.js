@@ -340,6 +340,12 @@ function HomeMain() {
                     <img src="/images/document.gif" alt="" /> 
                     <h3>Research Paper</h3>
                     <p> This milestone involves writing a formal research paper summarizing the project's findings, methodology, and results. It's often a requirement for academic or research-oriented projects.</p>
+                
+                    
+                    <a className='btn btn-info' href="Docs/Research paper-final.pdf" target="_blank" rel="noopener noreferrer">
+                        Click Here 
+                    </a>
+                  
                 </div>
 
               
@@ -348,6 +354,11 @@ function HomeMain() {
                     <img src="/images/document.gif" alt="" /> 
                     <h3>Poster</h3>
                     <p> A poster presentation is a visual summary of the project. It should be concise and visually appealing to convey work's key points. </p>
+                
+                    <a className='btn btn-info' href="images/Post.jpeg" target="_blank" rel="noopener noreferrer">
+                        Click Here 
+                    </a>
+
                 </div>
 
 
@@ -355,18 +366,29 @@ function HomeMain() {
                     <img src="/images/document.gif" alt="" /> 
                     <h3>Final Report</h3>
                     <p> A comprehensive document summarizing the complete project's objectives, methodology, results, and conclusions. It serves as a formal record of work and is often submitted as a requirement for project completion.</p>
+                
+                    <a className='btn btn-info' href="images/Post.jpeg" target="_blank" rel="noopener noreferrer">
+                        Click Here 
+                    </a>
                 </div>
 
                 <div className="box">
                     <img src="/images/document.gif" alt="" /> 
                     <h3>Website Assessment</h3>
                     <p> This milestone involves evaluating and assessing the website's performance, usability, and overall effectiveness.</p>
+                
+                    <a className='btn btn-info' href="/#" target="_blank" rel="noopener noreferrer">
+                        Click Here 
+                    </a>
                 </div>
 
                 <div className="box">
                     <img src="/images/document.gif" alt="" /> 
                     <h3>Logbook</h3>
                     <p> A logbook is a chronological record of the project-related activities, including notes, tasks, and observations. It helps maintain an organized record of project's development.</p>
+                    <a className='btn btn-info' href="/#" target="_blank" rel="noopener noreferrer">
+                        Click Here 
+                    </a>
                 </div>
 
                 </div>
@@ -395,6 +417,9 @@ function HomeMain() {
                     <img src="/images/teach.gif" alt="" /> 
                     <h3>Project Proposal</h3>
                     <p>At the start of the project, we created a proposal outlining the objectives, scope, methodology, and goals of our project. This document helps to gain approval and provides a roadmap for the work.</p>
+                    <a className='btn btn-info' href="/#" target="_blank" rel="noopener noreferrer">
+                        Click Here 
+                    </a>
                 </div>
 
 
@@ -402,6 +427,9 @@ function HomeMain() {
                     <img src="/images/teach.gif" alt="" /> 
                     <h3>Progress Presentation 1</h3>
                     <p>This is typically an early presentation to showcase the progress made in the project. It allows to receive feedback, make adjustments, and ensure that we are  on the right track.</p>
+                    <a className='btn btn-info' href="/#" target="_blank" rel="noopener noreferrer">
+                        Click Here 
+                    </a>
                 </div>
 
 
@@ -409,6 +437,9 @@ function HomeMain() {
                     <img src="/images/teach.gif" alt="" /> 
                     <h3>Progress Presentation 2</h3>
                     <p> Similar to the first progress presentation, the second presentation provides an update on the project's status as 90% completion, addressing any changes or developments since the first presentation.</p>
+                    <a className='btn btn-info' href="/#" target="_blank" rel="noopener noreferrer">
+                        Click Here 
+                    </a>
                 </div>
 
            
@@ -417,6 +448,9 @@ function HomeMain() {
                     <img src="/images/teach.gif" alt="" /> 
                     <h3>Final Presentation and Viva</h3>
                     <p> This is the culminating presentation of the project, where ,present the completed work and defend the findings before a panel or audience, often followed by a viva or oral examination to assess understanding of the project.</p>
+                    <a className='btn btn-info' href="/#" target="_blank" rel="noopener noreferrer">
+                        Click Here 
+                    </a>
                 </div>
 
 
