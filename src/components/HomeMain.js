@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import InstructorCarousel from './InstructorCarousel'; 
 import './styles/Homestyle.css';
 import Milestone from './Milestone'
+import Demo from './Demo';
 
 function HomeMain() {
 
@@ -31,11 +32,14 @@ function HomeMain() {
             <header className="header">
                 <a href="#" className="logo" style={{ textDecoration: 'none' }}> <i className="fa-solid fa-baby-carriage"></i> KiddoCare</a> 
                 <nav className="navbar">
-                    <a href="#home" style={{ textDecoration: 'none' }}>home</a>
-                    <a href="#about" style={{ textDecoration: 'none' }}>about</a>
-                    <a href="#education" style={{ textDecoration: 'none' }}>education</a>
-                    <a href="#teacher" style={{ textDecoration: 'none' }}>teacher</a>
-                    <a href="#gallery" style={{ textDecoration: 'none' }}>gallery</a>
+                    <a href="#home" style={{ textDecoration: 'none' }}>Home</a>
+                    <a href="#about" style={{ textDecoration: 'none' }}>About</a>
+                    <a href="#demo" style={{ textDecoration: 'none' }}>Details</a>
+                    <a href="#steps" style={{ textDecoration: 'none' }}>Components</a>
+                    <a href="#milestone" style={{ textDecoration: 'none' }}>Milestone</a>
+                    <a href="#Team" style={{ textDecoration: 'none' }}>Team</a>
+                    <a href="#docs" style={{ textDecoration: 'none' }}>Documents</a>
+                    
                     <a href="#contact" style={{ textDecoration: 'none' }}>contact</a>
                 </nav>
                 <div className="icons">
@@ -200,7 +204,11 @@ function HomeMain() {
     </div>
 
     
-    </section>
+            </section>
+
+            <section className='Demo' id="demo">
+            <Demo />
+            </section>
             
 
             {/* education section start */}
@@ -292,7 +300,7 @@ function HomeMain() {
 
             {/* <!-- teacher section starts --> */}
 
-            <section className="teacher" id="teacher">
+            <section className="teacher" id="Team">
 
             <h1 className="heading">
                     <span className="skin-rash-text">Our</span>
@@ -314,7 +322,7 @@ function HomeMain() {
 
             {/* <!-- activities section starts --> */}
 
-            <section className="activities">
+            <section className="activities" id='docs'>
 
             <center>
                 <h3 style={{fontSize:'40px' }}>
@@ -420,47 +428,78 @@ function HomeMain() {
 
 {/* <!-- activities section ends --> */}
 
-{/* <!-- footer section starts --> */}
 
-<section className="footer">
+{/* <!-- contact section starts --> */}
 
-    <div className="box-container">
+<section className="contact" id="contact">
 
-        <div className="box">
-            <h3> <img src="/images/logo.png" alt=""  style={{width:'290px', height:'290px'}}/> </h3>
-            <p>"Your Baby's Wellness, Our Priority!"</p>
+    <h1 className="heading">
+        <span className="skin-rash-text">CONTACT</span>
+        <span className="predictions-text"> US</span>
+    </h1>
+
+    <div className="icons-container">
+
+        <div className="icons">
+            <i className="fas fa-clock" ></i>
+            <h3>opening hours :</h3>
+            <p>mon - friday</p>
+            <p>weekend</p>
+            <p>24/7</p>
+            
         </div>
 
-        <div className="box">
-            <h3>quick links</h3>
-            <a href="#"> <i class="fas fa-caret-right"></i> enroll now</a>
-            <a href="#"> <i class="fas fa-caret-right"></i> parent portal</a>
-            <a href="#"> <i class="fas fa-caret-right"></i> school calendar</a>
-            <a href="#"> <i class="fas fa-caret-right"></i> lunch menu</a>
-            <a href="#"> <i class="fas fa-caret-right"></i> school supply list</a>
+        <div className="icons">
+            <i className="fas fa-envelope"></i>
+            <h3>email</h3>
+            <p>ramona123@gmail.com</p>
+            <p>udara321@gmail.com</p>
         </div>
 
-        <div class="box">
-            <h3>category</h3>
-            <a href="#"> <i class="fas fa-caret-right"></i> about us</a>
-            <a href="#"> <i class="fas fa-caret-right"></i> academics</a>
-            <a href="#"> <i class="fas fa-caret-right"></i> admissions</a>
-            <a href="#"> <i class="fas fa-caret-right"></i> news & events</a>
-            <a href="#"> <i class="fas fa-caret-right"></i> contact us</a>
-        </div>
-
-        <div class="box">
-            <h3>extra links</h3>
-            <a href="#"> <i class="fas fa-caret-right"></i> privacy policy</a>
-            <a href="#"> <i class="fas fa-caret-right"></i> terms of use</a>
-            <a href="#"> <i class="fas fa-caret-right"></i> site map</a>
-            <a href="#"> <i class="fas fa-caret-right"></i> FAQs</a>
-            <a href="#"> <i class="fas fa-caret-right"></i> accessibility statement</a>
+        <div className="icons">
+            <i className="fas fa-phone"></i>
+            <h3>phone number</h3>
+            <p>+94-76-100-6754</p>
+            <p>+94-76-100-6755</p>
         </div>
 
     </div>
 
-    <div class="credit"> &copy; copyright @ 2023 by <span>Team 103</span></div>
+    <div className="row">
+
+        <div className="image">
+
+        <img src="/images/logo.png" alt=""  style={{width:'390px', height:'490px'}}/>
+        </div>
+
+        <form action="">
+            <h3>get in touch</h3>
+            <div className="inputBox">
+                <input type="text" placeholder="your name"/>
+                <input type="email" placeholder="your email"/>
+            </div>
+            <div className="inputBox">
+                <input type="number" placeholder="your number"/>
+                <input type="text" placeholder="your subject"/>
+            </div>
+            <textarea placeholder="your message" cols="30" rows="10"></textarea>
+            <input type="submit" value="send message" className="btn"/>
+        </form>
+
+    </div>
+
+</section>
+
+{/* <!-- contact section ends --> */}
+
+
+
+{/* <!-- footer section starts --> */}
+
+<section className="footer">
+
+
+    <div className="credit"> &copy; copyright @ 2023 by <span>Team 103</span></div>
 
 </section>
 
