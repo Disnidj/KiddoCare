@@ -1,0 +1,606 @@
+
+
+:root{
+    --orange:#f9ba60;
+    --pink:#e9768f;
+    --gpink:#ffc0cb;
+    --blue:#87ceeb;
+    --bblue:#3979b6;
+    --dblue:#0f3961;
+    --ggpink:#fc8599;
+    --bbblue:#03b3f8;
+    --black: #1d1c1c;
+    --white: #fff;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+section{
+  padding: 3rem 7%;
+}
+
+.heading{
+  font-size: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin-bottom: 6rem;
+}
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  outline: none; border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+
+
+.heading span{
+  color: var(--bblue);
+  text-transform: uppercase;
+}
+
+.btn{
+  font-size: 1.7rem;
+  margin-top: 1rem;
+  display: inline-block;
+  padding: .8rem 3rem;
+  border-radius: .5rem;
+  border: .2rem solid var(--bblue);
+  color: var(--bblue);
+  background: none;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background: var(--bblue);
+  color: var(--white);
+}
+
+/* header */
+
+.header{
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+  background: var(--white);
+  box-shadow: var(--box-shadow);
+}
+
+.header .logo{
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: var(--black);
+}
+
+.header .logo i{
+  color: var(--bblue);
+}
+
+.header .navbar a{
+  font-size: 1.7rem;
+  margin: 0 1rem;
+  color: var(--black);
+}
+
+.header .navbar a:hover,
+.header .icons div:hover{
+  color: var(--bblue);
+}
+
+.header .icons div{
+  font-size: 2.5rem;
+  margin-left: 1.7rem;
+  color: var(--black);
+  cursor: pointer;
+}
+
+#menu-btn{
+  display: none;
+}
+
+.header .login-form{
+  position: absolute;
+  top: 110%; right: -110%;
+  width: 35rem;
+  box-shadow: var(--box-shadow);
+  padding: 2rem;
+  border-radius: .5rem;
+  background: var(--white);
+  text-align: center;
+}
+
+.header .login-form.active{
+  right: 2rem;
+  transition: .4s linear;
+}
+
+.header .login-form h3{
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.header .login-form .box{
+  width: 100%;
+  margin: .7rem 0;
+  background: #eee;
+  border-radius: .5rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+  color: var(--black);
+  text-transform: capitalize;
+}
+
+.header .login-form p{
+  font-size: 1.4rem;
+  padding: .5rem 0;
+  color: var(--light-color);
+}
+
+.header .login-form p a{
+  color: var(--bblue);
+  text-decoration: underline;
+}
+
+/* header ends */
+
+
+
+/* home */
+
+.home{
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  position: relative;
+}
+
+.home .content{
+  flex: 1 1 40rem;
+  padding-top: 6.5rem;
+}
+
+.home .content h3{
+  font-size: 6rem;
+  color: var(--black);
+}
+
+.home .content h3 .skin-rash-text {
+  color: var(--blue); /* Color for "Skin Rash" */
+}
+
+.home .content h3 .predictions-text {
+  color: var(--gpink)/*color for "Predictions" */
+}
+
+
+.home .content p{
+  font-size: 1.7rem;
+  color: var(--light-color);
+  line-height: 1.8;
+  padding: 1rem 0;
+}
+
+.home .image{
+  flex: 1 1 70rem;
+}
+
+.home .image img{
+  width: 700px;
+  height: 450px;
+  padding: 4rem;
+  margin-left: 30px;
+}
+
+.custom-shape-divider-bottom-1684324473 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1684324473 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 107px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1684324473 .shape-fill {
+  fill: var(--pink);
+}
+
+/* end */
+
+/* about us */
+
+
+
+.about{
+  background: var(--pink);
+}
+
+.about .row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.about .row .image{
+  flex: 1 1 50rem;
+}
+
+.about .row .image img{
+  width: 100%;
+  height: 100%;
+}
+
+.about .row .content{
+  flex: 1 1 40rem;
+}
+
+.about .row .content h3{
+  font-size: 3.5rem;
+  color: var(--white);
+  line-height: 1.5;
+}
+
+.about .row .content p{
+  font-size: 1.4rem;
+  color: var(--white);
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+.about h1 .skin-rash-text {
+  color: var(--blue); /* Color for "Skin Rash" */
+}
+
+.about h1 .predictions-text {
+  color: var(--gpink)/*color for "Predictions" */
+}
+
+/* end */
+
+
+/* about us 2 */
+
+/* Style for horizontal layout */
+.about-us-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Style for each section container */
+.about-us-list .section-container {
+  width: 28%; /* Adjust the width as needed */
+  margin-bottom: 20px;
+}
+
+/* Style for section headers */
+.about-us-list .section-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+
+/* end  */
+
+
+
+/* steps */
+
+.steps{
+  background: url(/public/images/pngegg.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.steps .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  gap: 1.5rem;
+}
+
+.steps .box-container .box{
+  background: var(--white);
+  border-radius: 2rem;
+  box-shadow: var(--box-shadow);
+  outline: .1rem solid rgba(0,0,0,.1);
+  outline-offset: -1rem;
+  overflow: hidden;
+}
+
+.steps .box-container .box:hover img{
+  transform: scale(1.1);
+}
+
+.steps .box-container .box:nth-child(1){
+  background: var(--ggpink);
+}
+
+.steps .box-container .box:nth-child(2){
+  background: var(--bbblue);
+}
+
+.steps .box-container .box:nth-child(4){
+  background: var(--ggpink);
+}
+
+.steps .box-container .box:nth-child(3){
+  background: var(--bbblue);
+}
+
+
+
+.steps .box-container .box h3{
+  font-size: 2.5rem;
+  color: var(--white);
+  line-height: 1.8;
+  padding-top: 3rem;
+  padding-left: 2rem;
+}
+
+.steps .box-container .box p{
+  font-size: 1.6rem;
+  line-height: 1.8;
+  color: var(--white);
+  padding: 1rem 2rem;
+  
+}
+
+.steps .box-container .box img{
+  width: 100%;
+  height: 66%;
+}
+
+/* end */
+
+
+/* milestone */
+
+
+
+.milestone h1 .skin-rash-text {
+  color: var(--bblue); /* Color for "Skin Rash" */
+}
+
+.milestone h1 .predictions-text {
+  color: var(--pink)/*color for "Predictions" */
+}
+
+
+/* end  */
+
+
+
+
+/* teacher */
+
+.teacher{
+  background: url(/public/images/gallery-bg.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.teacher .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 20.5rem;
+  margin-left: 70px;
+}
+
+.teacher h1 .skin-rash-text {
+  color: var(--blue); /* Color for "Skin Rash" */
+}
+
+.teacher h1 .predictions-text {
+  color: var(--gpink)/*color for "Predictions" */
+}
+
+.teacher .box-container .box{
+  background: var(--white);
+  padding: 3rem 2rem;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+  border-radius: 2rem;
+}
+
+.teacher .box-container .box img{
+  height: 30rem;
+}
+
+.teacher .box-container .box h3{
+  font-size: 2.5rem;
+  color: var(--black);
+}
+
+.teacher .box-container .box p{
+  font-size: 1.7rem;
+  color: var(--light-color);
+  margin-bottom: 1rem;
+}
+
+.teacher .box-container .box .share i{
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  font-size: 2rem;
+  border-radius: .5rem;
+  background: none;
+  color: var(--pink);
+  border: .1rem solid var(--pink);
+  margin-left: .5rem;
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+}
+
+.teacher .box-container .box .share i:hover{
+  color: var(--white);
+  border: .1rem solid var(--bblue);
+  background: var(--bblue);
+}
+
+/* end */
+
+/* activities */
+
+.activities .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 12.5rem;
+}
+
+.activities h3 .skin-rash-text {
+  color: var(--blue); /* Color for "Skin Rash" */
+  
+}
+
+.activities h3 .predictions-text {
+  color: var(--gpink)/*color for "Predictions" */
+}
+
+.activities .box-container .box{
+  padding: 3rem 2rem;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+  border-radius: 2rem;
+  outline: .9rem solid rgba(255, 0, 179, 0.1);
+  outline-offset: -1rem;
+}
+
+.activities .box-container .box img{
+  height: 8rem;
+}
+
+.activities .box-container .box:hover img{
+  transform: scale(1.1);
+}
+
+.activities .box-container .box h3{
+  font-size: 2.7rem;
+  padding: 4rem 0;
+  color: var(--bblue);
+}
+
+.activities .box-container .box p{
+  font-size: 14px;
+}
+
+.activities .box-container .box2{
+  padding: 3rem 2rem;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+  border-radius: 2rem;
+  outline: .9rem solid rgba(6, 111, 182, 0.1);
+  outline-offset: -1rem;
+}
+
+.activities .box-container .box2 img{
+  height: 8rem;
+}
+
+.activities .box-container .box2:hover img{
+  transform: scale(1.1);
+}
+
+.activities .box-container .box2 h3{
+  font-size: 2.7rem;
+  padding: 4rem 0;
+  color: var(--bblue);
+}
+
+.activities .box-container .box2 p{
+  font-size: 14px;
+}
+ 
+
+/* end */
+
+
+
+
+
+
+
+/* footer */
+
+.footer{
+  background: var(--pink);
+}
+
+.footer .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box h3{
+  font-size: 2.2rem;
+  color: var(--bblue);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box p{
+  font-size: 1.5rem;
+  color: var(--white);
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+.footer .box-container .box a{
+  display: block;
+  font-size: 1.4rem;
+  color: var(--white);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box a:hover{
+  color: var(--bblue);
+}
+
+.footer .box-container .box a i{
+  padding-right: .5rem;
+  color: var(--bblue);
+}
+
+.footer .credit{
+  margin-top: 2.5rem;
+  padding: 1rem;
+  padding-top: 2rem;
+  border-top: .1rem solid rgba(0,0,0,.3);
+  text-align: center;
+  color: var(--white);
+  font-size: 2rem;
+}
+
+.footer .credit span{
+  color: var(--bblue);
+}
+
+/* end */
